@@ -1,4 +1,4 @@
-import { api } from "@/libs/axios";
+import { getApi } from "@/libs/axios";
 import { useQuery } from "react-query";
 
 export interface Activity {
@@ -16,9 +16,9 @@ interface Params {
   account_id: number;
 }
 
-async function getActivity(params: Params): Promise<Activity[]> {
-  if (!params.account_id) return [];
-
+async function getActivity(params: Params) {
+  if (!params.account_id) return;
+  const api = await getApi();
   const { data } = await api.get<Activity[]>(
     `/api/accounts/${params.account_id}/activity`
   );

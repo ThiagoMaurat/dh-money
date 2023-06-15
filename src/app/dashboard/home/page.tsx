@@ -2,7 +2,16 @@
 import { DefaultButton } from "@/components/Button";
 import { Template } from "@/components/Template";
 import { TemplateGrid } from "@/components/Template/TemplateGrid";
-import { HStack, Stack, Flex, Text, Box, VStack, InputGroup, InputLeftElement } from "@chakra-ui/react";
+import {
+  HStack,
+  Stack,
+  Flex,
+  Text,
+  Box,
+  VStack,
+  InputGroup,
+  InputLeftElement,
+} from "@chakra-ui/react";
 import { Link } from "@chakra-ui/next-js";
 import FieldInput from "@/components/FieldInput";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -58,17 +67,39 @@ export default function Home() {
             borderRadius={"8px"}
             w="100%"
           >
-            <HStack spacing={"16px"} w="100%" align={"flex-end"} justifyContent={"flex-end"} fontSize={{ base: "12px", sm: "16px" }}>
-              <Link href={"/dashboard/cards"} color="#FFFF" style={{ textDecoration: "underline", color: "#FFFF" }}>
+            <HStack
+              spacing={"16px"}
+              w="100%"
+              align={"flex-end"}
+              justifyContent={"flex-end"}
+              fontSize={{ base: "12px", sm: "16px" }}
+            >
+              <Link
+                href={"/dashboard/cards"}
+                color="#FFFF"
+                style={{ textDecoration: "underline", color: "#FFFF" }}
+                _hover={{ fontWeight: 500 }}
+              >
                 Ver cartões
               </Link>
 
-              <Link href={"/dashboard/profile"} color="#FFFF" style={{ textDecoration: "underline", color: "#FFFF" }}>
+              <Link
+                href={"/dashboard/profile"}
+                color="#FFFF"
+                style={{ textDecoration: "underline", color: "#FFFF" }}
+                _hover={{ fontWeight: 500 }}
+              >
                 Ver CVU
               </Link>
             </HStack>
 
-            <Text color="#FFFF" fontWeight="700" fontSize="16px" lineHeight="22px" py={"2rem"}>
+            <Text
+              color="#FFFF"
+              fontWeight="700"
+              fontSize="16px"
+              lineHeight="22px"
+              py={"2rem"}
+            >
               Dinheiro disponível
             </Text>
 
@@ -86,7 +117,11 @@ export default function Home() {
             </Box>
           </Flex>
 
-          <Stack spacing={"20px"} w="100%" direction={{ base: "column", md: "row" }}>
+          <Stack
+            spacing={"20px"}
+            w="100%"
+            direction={{ base: "column", md: "row" }}
+          >
             <DefaultButton
               h={{ base: "67px", md: "85px", lg: "106px" }}
               label={"Carregar valor"}
@@ -94,7 +129,11 @@ export default function Home() {
               onClick={() => push("/dashboard/recharge-value")}
             />
 
-            <DefaultButton h={{ base: "67px", md: "85px", lg: "106px" }} label={"Pagar serviços"} fontSize={{ base: "16px", sm: "24px" }} />
+            <DefaultButton
+              h={{ base: "67px", md: "85px", lg: "106px" }}
+              label={"Pagar serviços"}
+              fontSize={{ base: "16px", sm: "24px" }}
+            />
           </Stack>
 
           <InputGroup>
@@ -118,7 +157,16 @@ export default function Home() {
             />
           </InputGroup>
 
-          <RecentActivity seeActivities activity={search ? filter(ordedData, (activity) => activity.description.includes(search)) : ordedData} />
+          <RecentActivity
+            seeActivities
+            activity={
+              search
+                ? filter(ordedData, (activity) =>
+                    activity.description.includes(search)
+                  )
+                : ordedData
+            }
+          />
         </VStack>
       </TemplateGrid>
     </Template>

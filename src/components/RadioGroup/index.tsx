@@ -16,7 +16,6 @@ const RadioComponent: React.ForwardRefRenderFunction<
       fontWeight="400"
       fontSize="16px"
       {...props}
-      ref={ref}
     />
   );
 };

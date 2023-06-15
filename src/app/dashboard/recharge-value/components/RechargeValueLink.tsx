@@ -1,5 +1,4 @@
 import { useStep } from "@/contexts/steps";
-import { Link } from "@chakra-ui/next-js";
 import { HStack } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { IoIosArrowRoundForward } from "react-icons/io";

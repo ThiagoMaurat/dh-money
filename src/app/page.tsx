@@ -8,7 +8,7 @@ export default function Home() {
       <Flex
         position={"relative"}
         w="100%"
-        h="100%"
+        h="calc(100vh - 128px)"
         flexDir={"column"}
         justifyContent={"end"}
         alignItems={"center"}

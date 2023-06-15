@@ -1,4 +1,4 @@
-import { api } from "@/libs/axios";
+import { getApi } from "@/libs/axios";
 import { randomUUID } from "crypto";
 import { type GetServerSidePropsContext } from "next";
 import {
@@ -52,7 +52,7 @@ export const authOptions: NextAuthOptions = {
         if (!credentials?.email || !credentials.password) {
           return null;
         }
-
+        const api = await getApi();
         try {
           const { data } = await api.post<{ token: string }>("/api/login", {
             email: credentials?.email,

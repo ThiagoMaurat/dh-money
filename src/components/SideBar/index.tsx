@@ -63,9 +63,10 @@ export const SideBar = ({}: SideBarProps) => {
     >
       <VStack spacing={"1rem"} align={"flex-start"}>
         {sideBarItems.map((item, index) => {
+          console.log(item.path.split("/"));
           return (
             <Link
-              fontWeight={pathname === item.path ? "800" : "600"}
+              fontWeight={pathname.includes(item.path.split("/")[2]) ? "800" : "600"}
               fontSize={"17px"}
               key={`sidebar-item-${index}`}
               color="#201F22"

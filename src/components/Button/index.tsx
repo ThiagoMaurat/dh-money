@@ -8,9 +8,7 @@ interface DefaultButtonProps extends Omit<ButtonProps, Variants> {
   variant?: Variants;
 }
 
-export const DefaultButton: FC<DefaultButtonProps> = (
-  props: DefaultButtonProps
-) => {
+export const DefaultButton: FC<DefaultButtonProps> = (props: DefaultButtonProps) => {
   const { label, variant = "primary", ...rest } = props;
 
   const stylesByVariant = useMemo((): Record<Variants, ButtonProps> => {
@@ -27,7 +25,7 @@ export const DefaultButton: FC<DefaultButtonProps> = (
           background: "#C1FD35",
         },
         _hover: {
-          background: "#c1fd35e4",
+          filter: "brightness(105%)",
         },
       },
       secondary: {

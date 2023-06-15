@@ -5,24 +5,37 @@ interface ErrorAPI {
   error: string;
 }
 
-export const api = axios.create({
-  baseURL: process.env.NEXT_API_URL || "https://digitalmoney.ctd.academy",
-});
+export async function api(token: any) {
+  const baseURL =
+    process.env.NEXT_API_URL || "https://digitalmoney.ctd.academy";
 
-getSession().then((session) => {
-  api.defaults.headers.common["Authorization"] = `${session?.user?.token}`;
-});
+  const instance = axios.create({
+    baseURL,
+    headers: {
+      Authorization: token,
+    },
+  });
 
-api.interceptors.response.use(
-  (response) => response,
-  (error: AxiosError<ErrorAPI>) => {
-    if (
-      error?.response?.status === 401 &&
-      error?.response?.data.error.includes("expired")
-    ) {
-      signOut({ redirect: true, callbackUrl: "/" });
+  instance.interceptors.response.use(
+    (response) => response,
+    (error: AxiosError<ErrorAPI>) => {
+      if (
+        error?.response?.status === 401 &&
+        error?.response?.data.error.includes("expired")
+      ) {
+        signOut({ redirect: true, callbackUrl: "/" });
+      }
+
+      return Promise.reject(error);
     }
+  );
 
-    return Promise.reject(error);
-  }
-);
+  return instance;
+}
+
+export async function getApi() {
+  const session = await getSession();
+  const token = session?.user?.token;
+
+  return await api(token);
+}

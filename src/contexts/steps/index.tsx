@@ -1,10 +1,4 @@
-import React, {
-  ReactNode,
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import React, { ReactNode, createContext, useContext, useEffect, useState } from "react";
 
 interface FormDataProps {
   amount: number;
@@ -31,11 +25,7 @@ export const StepProvider = ({ children }: ProviderProps) => {
     setStep(1);
   }, []);
 
-  return (
-    <StepContext.Provider value={{ setStep, step }}>
-      {children}
-    </StepContext.Provider>
-  );
+  return <StepContext.Provider value={{ setStep, step }}>{children}</StepContext.Provider>;
 };
 
 export function useStep() {

@@ -1,4 +1,4 @@
-import { api } from "@/libs/axios";
+import { getApi } from "@/libs/axios";
 import { useQuery } from "react-query";
 
 export interface Account {
@@ -10,6 +10,7 @@ export interface Account {
 }
 
 async function getAccount(): Promise<Account> {
+  const api = await getApi();
   const { data } = await api.get<Account>(`/api/account`);
 
   return data;

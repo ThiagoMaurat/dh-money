@@ -11,11 +11,7 @@ interface RecentActivityProps {
   seeActivities?: boolean;
 }
 
-export const RecentActivity = ({
-  activity,
-  hasPagination,
-  seeActivities,
-}: RecentActivityProps) => {
+export const RecentActivity = ({ activity, hasPagination, seeActivities }: RecentActivityProps) => {
   const router = useRouter();
 
   return (
@@ -30,13 +26,7 @@ export const RecentActivity = ({
       borderRadius={"8px"}
       w="100%"
     >
-      <Text
-        color="#201F22"
-        fontWeight="700"
-        fontSize="16px"
-        lineHeight="22px"
-        py={"2rem"}
-      >
+      <Text color="#201F22" fontWeight="700" fontSize="16px" lineHeight="22px" py={"2rem"}>
         Sua atividade
       </Text>
 
@@ -57,12 +47,7 @@ export const RecentActivity = ({
           _hover={{ textDecoration: "underline" }}
           pt={"2rem"}
         >
-          <Text
-            color="#201F22"
-            fontWeight="700"
-            fontSize="16px"
-            lineHeight="22px"
-          >
+          <Text color="#201F22" fontWeight="700" fontSize="16px" lineHeight="22px">
             Ver toda sua atividade
           </Text>
           <AiOutlineArrowRight size={"1.6rem"} color="#3A393E" />

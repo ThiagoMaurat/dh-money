@@ -1,5 +1,5 @@
 "use client";
-import { api } from "@/libs/axios";
+import { getApi } from "@/libs/axios";
 import { useMutation } from "react-query";
 
 interface CreatedTransactionResponse {
@@ -21,6 +21,8 @@ export type UserCreateTransactionOutput = {
 };
 
 export async function CreateTransaction(userData: UserCreateTransactionOutput) {
+  const api = await getApi();
+
   await api.post<CreatedTransactionResponse>(
     `/api/accounts/${userData.account_id}/transactions`,
     userData

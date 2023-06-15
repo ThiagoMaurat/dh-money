@@ -22,10 +22,9 @@ export const Data = (props: DataProps) => {
   const toast = useToast();
 
   const {
-    setFocus,
     control,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm<TypeFormProfileForm>({
     resolver: zodResolver(FormProfileForm),
     defaultValues: {
@@ -69,7 +68,6 @@ export const Data = (props: DataProps) => {
   const [show, setShow] = useState(false);
   const handleClickShow = () => setShow(!show);
   const [isEditingName, setIsEditingName] = useState(false);
-  const [isEditingCpf, setIsEditingCpf] = useState(false);
   const [isEditingPhone, setIsEditingPhone] = useState(false);
   const [isEditingPassword, setIsEditingPassword] = useState(false);
 
@@ -159,7 +157,6 @@ export const Data = (props: DataProps) => {
             </InputGroup>
           </FormControl>
         </Box>
-
         <Box display={"flex"} flexDir={"row"} gap={"1em"} alignItems={"center"}>
           <Text w="7ch" fontWeight={"medium"}>
             Telefone
@@ -211,7 +208,6 @@ export const Data = (props: DataProps) => {
                 variant="flushed"
                 isDisabled={!isEditingPassword}
               />
-
               <InputRightElement onClick={() => setIsEditingPassword(!isEditingPassword)}>
                 {isEditingPassword ? (
                   <HiCheck size={22} cursor={"pointer"} onClick={handleSubmit(onSubmit)} />
@@ -221,7 +217,6 @@ export const Data = (props: DataProps) => {
               </InputRightElement>
             </InputGroup>
           </FormControl>
-          {/* <DefaultButton label="Atualizar" type="submit" /> */}
         </Box>
       </Box>
     </Box>

@@ -1,13 +1,4 @@
-import {
-  Badge,
-  Flex,
-  FlexProps,
-  HStack,
-  Text,
-  useBreakpointValue,
-  useDisclosure,
-  Box,
-} from "@chakra-ui/react";
+import { Badge, Flex, FlexProps, HStack, Text, useBreakpointValue, useDisclosure, Box } from "@chakra-ui/react";
 import Image from "next/image";
 import { FC, useMemo } from "react";
 import MobileDrawer from "../MobileDrawer";
@@ -51,59 +42,24 @@ export const Header: FC<HeaderProps> = (props: HeaderProps) => {
   const isMd = useBreakpointValue({ base: true, md: false });
 
   return (
-    <Flex
-      justifyContent={"space-between"}
-      alignItems={"center"}
-      {...props}
-      {...stylesByVariant[variant]}
-    >
-      {variant === "primary" && (
-        <Image
-          alt="logo"
-          src="/logo.svg"
-          width={86}
-          height={33}
-          style={{ cursor: "pointer" }}
-          onClick={() => push("/")}
-        />
-      )}
+    <Flex justifyContent={"space-between"} alignItems={"center"} {...props} {...stylesByVariant[variant]}>
+      {variant === "primary" && <Image alt="logo" src="/logo.svg" width={86} height={33} style={{ cursor: "pointer" }} onClick={() => push("/")} />}
       {variant === "secondary" && (
-        <Image
-          alt="logo"
-          src="/logo-alt.svg"
-          width={86}
-          height={33}
-          style={{ cursor: "pointer" }}
-          onClick={() => push("/")}
-        />
+        <Image alt="logo" src="/logo-alt.svg" width={86} height={33} style={{ cursor: "pointer" }} onClick={() => push("/dashboard/home")} />
       )}
 
       {buttonOn && (
         <>
-          <Box
-            display={"flex"}
-            alignItems={"center"}
-            w={{ base: "60%", md: "40%", lg: "20%" }}
-            h={"40px"}
-          >
-            <DefaultButton
-              variant="home1"
-              label="Entrar"
-              marginRight={"8%"}
-              onClick={() => push("/login")}
-            />
-            <DefaultButton
-              variant="home2"
-              label="Criar conta"
-              onClick={() => push("/signup")}
-            />
+          <Box display={"flex"} alignItems={"center"} w={{ base: "60%", md: "40%", lg: "20%" }} h={"40px"}>
+            <DefaultButton variant="home1" label="Entrar" marginRight={"8%"} onClick={() => push("/login")} />
+            <DefaultButton variant="home2" label="Criar conta" onClick={() => push("/signup")} />
           </Box>
         </>
       )}
 
       {shouldShowUser && session?.user?.user_data && (
         <>
-          <HStack spacing={"1rem"}>
+          <HStack spacing={"1rem"} onClick={() => push("/dashboard/home")} cursor={"pointer"}>
             <Badge
               display={"flex"}
               alignContent={"center"}
@@ -116,14 +72,12 @@ export const Header: FC<HeaderProps> = (props: HeaderProps) => {
               fontSize={"20px"}
               color={"#201F22"}
               fontWeight={700}
+              _hover={{ filter: "brightness(105%)" }}
             >{`${session?.user?.user_data?.firstname[0].toUpperCase()}${session?.user?.user_data?.lastname[0].toUpperCase()}`}</Badge>
 
-            <Text
-              display={{ base: "none", sm: "block" }}
-              fontWeight={700}
-              fontSize={"16px"}
-              color={"#FFFF"}
-            >{`Olá, ${session?.user?.user_data?.firstname} ${session?.user?.user_data?.lastname}`}</Text>
+            <Text display={{ base: "none", sm: "block" }} fontWeight={700} fontSize={"16px"} color={"#FFFF"}>
+              {`Olá, ${session?.user?.user_data?.firstname} ${session?.user?.user_data?.lastname}`}
+            </Text>
 
             <AiOutlineMenu
               onClick={onToggle}

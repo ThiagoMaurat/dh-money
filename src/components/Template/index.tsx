@@ -12,21 +12,11 @@ type TemplateProps = {
 } & BoxProps;
 
 export const Template = (props: TemplateProps) => {
-  const {
-    children,
-    variant = "primary",
-    buttonOn,
-    shouldShowUser,
-    ...rest
-  } = props;
+  const { children, variant = "primary", buttonOn, shouldShowUser, ...rest } = props;
 
   return (
-    <Box h="calc(100vh - 128px)" {...rest}>
-      <Header
-        variant={variant}
-        shouldShowUser={shouldShowUser}
-        buttonOn={buttonOn}
-      />
+    <Box h="100vh" {...rest}>
+      <Header variant={variant} shouldShowUser={shouldShowUser} buttonOn={buttonOn} />
       {children}
       <Footer />
     </Box>

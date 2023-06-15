@@ -46,7 +46,7 @@ export default function Home() {
           <Box display={"flex"} flexDir={"column"}>
             <DefaultButton
               label="Administrar meios de pagamento"
-              h={"100px"}
+              h={{ base: "67px", md: "85px", lg: "106px" }}
               margin={"1rem 0rem 1rem 0rem"}
               borderRadius={"10px"}
               onClick={() => push("/dashboard/cards")}

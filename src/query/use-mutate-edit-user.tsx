@@ -1,5 +1,5 @@
 "use client";
-import { api } from "@/libs/axios";
+import { getApi } from "@/libs/axios";
 import { useMutation } from "react-query";
 
 type UserData = {
@@ -13,6 +13,8 @@ type UserData = {
 };
 
 export async function EditUser(userData: UserData) {
+  const api = await getApi();
+
   await api.patch<UserData>(`/api/users/${userData.user_id}`, {
     dni: userData.dni,
     email: userData.email,

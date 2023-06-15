@@ -4,11 +4,8 @@ import {
   Divider,
   Flex,
   HStack,
-  Modal,
   ModalCloseButton,
-  ModalContent,
   ModalFooter,
-  ModalOverlay,
   Text,
   useDisclosure,
   useToast,
@@ -18,6 +15,7 @@ import { useDeleteCard } from "@/query/use-mutate-delete-card";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { ModalDefault } from "@/components/Modal";
 import { useGetCards } from "@/query/use-get-cards";
 
 interface CardInfoProps {
@@ -28,7 +26,6 @@ interface CardInfoProps {
 
 export const CardInfo = (props: CardInfoProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [showModal, setShowModal] = useState(true);
   const mutateDeleteCard = useDeleteCard();
   const { data: session } = useSession();
   const toast = useToast();
@@ -62,7 +59,6 @@ export const CardInfo = (props: CardInfoProps) => {
   const formattedDateString = formatDateString(numberToString);
   const dateString = formattedDateString;
   const timestamp2 = convertDateToTimestamp(dateString);
-  console.log(timestamp2);
 
   const deleteCard = async (card_id: number) => {
     try {
@@ -140,34 +136,22 @@ export const CardInfo = (props: CardInfoProps) => {
           ) : null}
         </div>
 
-        {showModal ? (
-          <Modal isOpen={isOpen} onClose={onClose}>
-            <ModalOverlay />
+        <ModalDefault isCentered isOpen={isOpen} onClose={onClose}>
+          <Text>Tem certeza que deseja excluir o cartão ?</Text>
 
-            <ModalContent
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              h={"20vh"}
-            >
-              <ModalCloseButton />
-              <Text>Tem certeza que deseja excluir o cartão ?</Text>
-
-              <ModalFooter
-                display="flex"
-                justifyContent="space-evenly"
-                alignItems="center"
-              >
-                <Button colorScheme="green" mr={10} onClick={handleConfirm}>
-                  Sim
-                </Button>
-                <Button colorScheme="gray" onClick={onClose}>
-                  Não
-                </Button>
-              </ModalFooter>
-            </ModalContent>
-          </Modal>
-        ) : null}
+          <ModalFooter
+            display="flex"
+            justifyContent="space-evenly"
+            alignItems="center"
+          >
+            <Button colorScheme="green" mr={10} onClick={handleConfirm}>
+              Sim
+            </Button>
+            <Button colorScheme="gray" onClick={onClose}>
+              Não
+            </Button>
+          </ModalFooter>
+        </ModalDefault>
       </HStack>
       <Divider borderBottomColor={"blackAlpha.600"} />
     </>

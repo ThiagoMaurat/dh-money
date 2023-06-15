@@ -14,6 +14,8 @@ import { SlNote } from "react-icons/sl";
 import { TypeFormRechargeForm } from "./schema";
 import { useCreateTransferenceDeposit } from "@/query/use-mutate-transference-deposit";
 import { useStep } from "@/contexts/steps";
+import { format, parseISO } from "date-fns";
+import { ptBR } from "date-fns/locale";
 export const Step4 = () => {
   const { data: session } = useSession();
 
@@ -39,7 +41,7 @@ export const Step4 = () => {
     try {
       await createTransferenceDeposit({
         amount: data.value,
-        dated: new Date(),
+        dated: parseISO(format(new Date(), "yyyy-MM-dd", { locale: ptBR })),
         account_id: String(session.user.user_info.id),
         destination: session?.user?.user_info?.cvu,
         origin: session?.user?.user_info?.cvu,

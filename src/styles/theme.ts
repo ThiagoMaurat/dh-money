@@ -13,6 +13,9 @@ export const theme: ThemeConfig = extendTheme({
     body: "var(--font-openSans)",
   },
   colors: {
+    white: {
+      500: "#E3DFCF",
+    },
     green: {
       500: "#C1FD35",
     },

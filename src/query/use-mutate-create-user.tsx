@@ -1,5 +1,5 @@
 "use client";
-import { api } from "@/libs/axios";
+import { getApi } from "@/libs/axios";
 import { useMutation } from "react-query";
 
 interface CreatedUserResponse {
@@ -18,6 +18,8 @@ export type UserDataOutput = {
 };
 
 export async function CreateUser(userData: UserDataOutput) {
+  const api = await getApi();
+
   await api.post<CreatedUserResponse>("/api/users", userData);
 }
 

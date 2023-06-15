@@ -1,5 +1,5 @@
 "use client";
-import { api } from "@/libs/axios";
+import { getApi } from "@/libs/axios";
 import { useMutation } from "react-query";
 
 interface CreateCardResponse {
@@ -20,6 +20,8 @@ export type UserDataOutput = {
 };
 
 export async function CreateCard(userData: UserDataOutput) {
+  const api = await getApi();
+
   await api.post<CreateCardResponse>(
     `/api/accounts/${userData.account_id}/cards`,
     {

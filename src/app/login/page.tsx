@@ -89,7 +89,7 @@ export default function Page() {
             <FieldInputController placeholder="Senha" control={control} name="password" type="password" error={errors.password} />
 
             <DefaultButton isLoading={isSubmitting} label="Continuar" type="submit" />
-            <DefaultButton variant="secondary" label="Voltar" maxW={"350px"} onClick={() => setStep(0)} />
+            <DefaultButton variant="secondary" label="Voltar" onClick={() => setStep(0)} />
             {loginErrorMessage && <Text color="red">{loginErrorMessage}</Text>}
             {errors.password && <Text color="red">{errors.password.message}</Text>}
           </VStack>
