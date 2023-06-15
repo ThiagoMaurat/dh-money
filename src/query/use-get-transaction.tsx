@@ -1,4 +1,4 @@
-import { api } from "@/libs/axios";
+import { api, getApi } from "@/libs/axios";
 import { useQuery } from "react-query";
 
 export interface Transaction {
@@ -19,8 +19,11 @@ interface Params {
 
 async function getTransaction(params: Params): Promise<Transaction | null> {
   if (!params.account_id) return null;
+  const api = await getApi();
 
-  const { data } = await api.get<Transaction>(`/api/accounts/${params.account_id}/transactions/${params.transaction_id}`);
+  const { data } = await api.get<Transaction>(
+    `/api/accounts/${params.account_id}/transactions/${params.transaction_id}`
+  );
 
   return data;
 }
