@@ -4,7 +4,6 @@ import {
   Divider,
   Flex,
   HStack,
-  ModalCloseButton,
   ModalFooter,
   Text,
   useDisclosure,
@@ -14,7 +13,6 @@ import { BsCircleFill } from "react-icons/bs";
 import { useDeleteCard } from "@/query/use-mutate-delete-card";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 import { ModalDefault } from "@/components/Modal";
 import { useGetCards } from "@/query/use-get-cards";
 
@@ -97,44 +95,27 @@ export const CardInfo = (props: CardInfoProps) => {
         justifyContent={"space-between"}
         fontSize={{ base: "14px", sm: "16px" }}
       >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              gap: "30%",
-            }}
-          >
-            <Flex gap={4} align="center" justifyContent="center" py={"1.5rem"}>
-              <BsCircleFill fontSize={"2em"} color="#C1FD35" />
-              <Text w={"30vw"}>
-                Termina em {String(props.card_number).slice(-4)}
-              </Text>
-            </Flex>
-            <Text
-              onClick={onOpen}
-              fontWeight="700"
-              cursor={"pointer"}
-              _hover={{ borderBottom: "1px solid black" }}
-            >
-              Eliminar
-            </Text>
-          </div>
+        <Flex gap={4} align="center" justifyContent="center" py={"1.5rem"}>
+          <BsCircleFill fontSize={"2em"} color="#C1FD35" />
+          <Text w={"30vw"}>
+            Termina em {String(props.card_number).slice(-4)}
+          </Text>
+        </Flex>
 
-          {timestamp2 <= timestampNow ? (
-            <Text marginBottom={"7px"} fontSize={"10px"} color={"red"}>
-              Seu cartão expirou
-            </Text>
-          ) : null}
-        </div>
+        <Text
+          onClick={onOpen}
+          fontWeight="700"
+          cursor={"pointer"}
+          _hover={{ borderBottom: "1px solid black" }}
+        >
+          Eliminar
+        </Text>
+
+        {timestamp2 <= timestampNow ? (
+          <Text marginBottom={"7px"} fontSize={"10px"} color={"red"}>
+            Seu cartão expirou
+          </Text>
+        ) : null}
 
         <ModalDefault isCentered isOpen={isOpen} onClose={onClose}>
           <Text>Tem certeza que deseja excluir o cartão ?</Text>
