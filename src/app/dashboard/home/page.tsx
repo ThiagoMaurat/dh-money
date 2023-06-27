@@ -37,7 +37,7 @@ export default function Home() {
   const { data: accountData } = useGetAccount();
 
   const ordedData = useMemo(() => {
-    return orderBy(data, "dated", "desc");
+    return orderBy(data, "dated", "desc").reverse();
   }, [data]);
 
   return (
@@ -133,6 +133,7 @@ export default function Home() {
               h={{ base: "67px", md: "85px", lg: "106px" }}
               label={"Pagar serviços"}
               fontSize={{ base: "16px", sm: "24px" }}
+              onClick={() => push("/dashboard/pay")}
             />
           </Stack>
 
@@ -145,7 +146,7 @@ export default function Home() {
               background={"#FFFF !important"}
               border="1px solid #D2FFEC"
               name="search"
-              placeholder="Pesquisar em sua atividade"
+              placeholder="Pesquisar em 'Minha atividade'"
               _focus={{ boxShadow: "none", outline: "none" }}
               _placeholder={{
                 color: "rgba(0, 0, 0, 0.5)",

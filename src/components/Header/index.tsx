@@ -43,7 +43,7 @@ export const Header: FC<HeaderProps> = (props: HeaderProps) => {
 
   return (
     <Flex justifyContent={"space-between"} alignItems={"center"} {...props} {...stylesByVariant[variant]}>
-      {variant === "primary" && <Image alt="logo" src="/logo.svg" width={86} height={33} style={{ cursor: "pointer" }} onClick={() => push("/")} />}
+      {variant === "primary" && <Image alt="logo" src="/logo.svg" width={86} height={33} style={{ cursor: "pointer" }} onClick={() => push("/dashboard/home")} />}
       {variant === "secondary" && (
         <Image alt="logo" src="/logo-alt.svg" width={86} height={33} style={{ cursor: "pointer" }} onClick={() => push("/dashboard/home")} />
       )}

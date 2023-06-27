@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { Open_Sans } from "next/font/google";
 import { CacheProvider } from "@chakra-ui/next-js";
 import { StepProvider } from "@/contexts/steps";
+import { StepProviderPayService } from "@/contexts/step_pay_service";
 
 interface Props {
   children: React.ReactNode;
@@ -17,20 +18,22 @@ export const queryClient = new QueryClient();
 const Provider = ({ children }: Props) => {
   return (
     <StepProvider>
-      <CacheProvider>
-        <QueryClientProvider client={queryClient}>
-          <style jsx global>
-            {`
-              :root {
-                --font-rubik: ${openSans.style.fontFamily};
-              }
-            `}
-          </style>
-          <ChakraProvider theme={theme}>
-            <SessionProvider>{children}</SessionProvider>
-          </ChakraProvider>
-        </QueryClientProvider>
-      </CacheProvider>
+      <StepProviderPayService>
+        <CacheProvider>
+          <QueryClientProvider client={queryClient}>
+            <style jsx global>
+              {`
+                :root {
+                  --font-rubik: ${openSans.style.fontFamily};
+                }
+              `}
+            </style>
+            <ChakraProvider theme={theme}>
+              <SessionProvider>{children}</SessionProvider>
+            </ChakraProvider>
+          </QueryClientProvider>
+        </CacheProvider>
+      </StepProviderPayService>
     </StepProvider>
   );
 };

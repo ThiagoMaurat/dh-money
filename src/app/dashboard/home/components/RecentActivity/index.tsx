@@ -26,8 +26,14 @@ export const RecentActivity = ({ activity, hasPagination, seeActivities }: Recen
       borderRadius={"8px"}
       w="100%"
     >
-      <Text color="#201F22" fontWeight="700" fontSize="16px" lineHeight="22px" py={"2rem"}>
-        Sua atividade
+      <Text
+        color="#201F22"
+        fontWeight="700"
+        fontSize="16px"
+        lineHeight="22px"
+        py={"2rem"}
+      >
+        Minha atividade
       </Text>
 
       <Divider borderBottomColor={"blackAlpha.600"} />
@@ -47,8 +53,13 @@ export const RecentActivity = ({ activity, hasPagination, seeActivities }: Recen
           _hover={{ textDecoration: "underline" }}
           pt={"2rem"}
         >
-          <Text color="#201F22" fontWeight="700" fontSize="16px" lineHeight="22px">
-            Ver toda sua atividade
+          <Text
+            color="#201F22"
+            fontWeight="700"
+            fontSize="16px"
+            lineHeight="22px"
+          >
+            Ver toda minha atividade
           </Text>
           <AiOutlineArrowRight size={"1.6rem"} color="#3A393E" />
         </Flex>

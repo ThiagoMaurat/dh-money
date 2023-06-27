@@ -88,7 +88,7 @@ export default function ActivityPage() {
             ),
             4
           )
-        : chunk(orderBy(filterByDateOptions(data), "dated", "desc"), 4);
+        : chunk(orderBy(filterByDateOptions(data), "dated", "desc"), 10);
     }
 
     return search
@@ -96,7 +96,7 @@ export default function ActivityPage() {
           filter(data, (activity) => activity.description.includes(search)),
           4
         )
-      : chunk(orderBy(data, "dated", "desc"), 4);
+      : chunk(orderBy(data, "dated", "desc").reverse(), 10);
   }, [data, filterByDate, filterByDateOptions, search]);
 
   return (
@@ -124,7 +124,7 @@ export default function ActivityPage() {
                 background={"#FFFF !important"}
                 border="1px solid #D2FFEC"
                 name="search"
-                placeholder="Pesquisar em sua atividade"
+                placeholder="Pesquisar em 'Minha atividade'"
                 _focus={{ boxShadow: "none", outline: "none" }}
                 _placeholder={{
                   color: "rgba(0, 0, 0, 0.5)",
@@ -160,7 +160,7 @@ export default function ActivityPage() {
                 paginationStyle={{
                   marginTop: "2rem",
                 }}
-                registersPerPage={4}
+                registersPerPage={10}
                 totalCountOfRegisters={dataFormattedPages.reduce(
                   (total, array) => total + array.length,
                   0

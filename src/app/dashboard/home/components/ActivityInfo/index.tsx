@@ -18,11 +18,15 @@ export const ActivityInfo = (props: ActivityInfoProps) => {
       <HStack spacing={"16px"} w="100%" align={"center"} justifyContent={"space-between"} fontSize={{ base: "14px", sm: "16px" }}>
         <Flex gap={4} align="center" justifyContent="center" py={"1.5rem"}>
           <BsCircleFill fontSize={"2em"} color="#C1FD35" />
-          <Text>{activity.description}</Text>
+          <Text
+            _hover={{ textDecoration: "underline", cursor: "pointer" }}
+             >
+              {activity.description}
+              </Text>
         </Flex>
 
         <VStack>
-          <Text>R${activity.amount}</Text>
+          <Text>R$ {activity.amount}</Text>
           <Text color={"#A6A5A7"} fontSize={"12px"}>
             {isThisWeek(parseISO(activity.dated))
               ? format(parseISO(activity.dated), "EEEE", { locale: ptBR })

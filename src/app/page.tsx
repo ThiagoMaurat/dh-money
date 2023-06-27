@@ -8,11 +8,11 @@ export default function Home() {
       <Flex
         position={"relative"}
         w="100%"
-        h="calc(100vh - 128px)"
         flexDir={"column"}
         justifyContent={"end"}
         alignItems={"center"}
         paddingBottom={"10px"}
+        h="calc(100vh - 128px)"
       >
         <Box
           height={{ base: "210px", md: "180px", lg: "400px" }}
@@ -53,6 +53,7 @@ export default function Home() {
             </Text>
           </Box>
         </Box>
+
         <Box
           display={"flex"}
           flexDir={{ base: "column", md: "column", lg: "row" }}
@@ -118,6 +119,7 @@ export default function Home() {
             </Text>
           </Box>
         </Box>
+
         <Box
           position={"absolute"}
           bg={"#C1FD35"}
@@ -128,13 +130,14 @@ export default function Home() {
           borderRadius={"30px 30px 0 0"}
         ></Box>
         <Image
-          alt="logo"
+          alt="Mulher olhando o celular na mão"
           src="/Home.svg"
           position={"absolute"}
           zIndex={"-2"}
-          w={"100%"}
-          h={"100vh"}
+          width="100%"
+          height="764"
           objectFit={"cover"}
+          top={"-35px"}
         />
       </Flex>
     </Template>

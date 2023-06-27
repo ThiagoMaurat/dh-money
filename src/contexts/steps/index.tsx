@@ -1,11 +1,10 @@
-import React, { ReactNode, createContext, useContext, useEffect, useState } from "react";
-
-interface FormDataProps {
-  amount: number;
-  dated: string;
-  description: string;
-  cardNumber: string;
-}
+import React, {
+  ReactNode,
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 interface StepProps {
   step: number;
@@ -25,7 +24,11 @@ export const StepProvider = ({ children }: ProviderProps) => {
     setStep(1);
   }, []);
 
-  return <StepContext.Provider value={{ setStep, step }}>{children}</StepContext.Provider>;
+  return (
+    <StepContext.Provider value={{ setStep, step }}>
+      {children}
+    </StepContext.Provider>
+  );
 };
 
 export function useStep() {
