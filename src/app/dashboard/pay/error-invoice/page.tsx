@@ -48,7 +48,7 @@ export default function ErrorInvoice() {
                       color={"#FFFFFF"}
                       fontWeight="700"
                       fontSize={{ base: "20", sm: "36px" }}
-                      lineHeight="22px"
+                      lineHeight="32px"
                     >
                       Não encontramos faturas associadas a esses dados
 
@@ -63,7 +63,7 @@ export default function ErrorInvoice() {
                     color={"#CECECE"}
                     fontWeight="400"
                     fontSize="20px"
-                    lineHeight="16px"
+                    lineHeight="20px"
                   >
                     Revise os dados adicionados. Se estão corretos, é possível que a empresa ainda não carregou a sua fatura.
                   </Text>

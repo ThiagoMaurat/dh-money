@@ -1,6 +1,6 @@
 "use client";
 import { Template } from "@/components/Template";
-import { Flex, Image, Box, Center, Text } from "@chakra-ui/react";
+import { Flex, Image, Box, Center, Text, calc } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -9,13 +9,13 @@ export default function Home() {
         position={"relative"}
         w="100%"
         flexDir={"column"}
-        justifyContent={"end"}
+        justifyContent={"space-around"}
         alignItems={"center"}
         paddingBottom={"10px"}
         h="calc(100vh - 128px)"
       >
         <Box
-          height={{ base: "210px", md: "180px", lg: "400px" }}
+          height={{ base: "145px", md: "170px", lg: "400px" }}
           alignItems="left"
           width={{ base: "354px", md: "90%", lg: "90%" }}
           marginBottom={"5rem"}
@@ -60,7 +60,7 @@ export default function Home() {
         >
           <Box
             borderRadius="25px"
-            height={{ base: "190px", md: "224px", lg: "246px" }}
+            height={{ base: "170px", md: "224px", lg: "246px" }}
             alignItems="baseline"
             borderWidth="1px"
             width={{ base: "354px", md: "597px", lg: "500px" }}
@@ -73,7 +73,7 @@ export default function Home() {
               fontWeight="700"
               fontSize={{ base: "24px", md: "36px", lg: "36px" }}
               lineHeight={{ base: "18px", md: "36px", lg: "49px" }}
-              py={"1rem"}
+              py={"0.5rem"}
               borderBottom={"2px solid #C1FD35"}
             >
               Transferência
@@ -91,7 +91,7 @@ export default function Home() {
           </Box>
           <Box
             borderRadius="25px"
-            height={{ base: "190px", md: "224px", lg: "246px" }}
+            height={{ base: "150px", md: "224px", lg: "246px" }}
             alignItems="baseline"
             borderWidth="1px"
             width={{ base: "354px", md: "597px", lg: "500px" }}
@@ -103,7 +103,7 @@ export default function Home() {
               fontWeight="700"
               fontSize={{ base: "24px", md: "36px", lg: "36px" }}
               lineHeight={{ base: "18px", md: "36px", lg: "49px" }}
-              py={"1rem"}
+              py={"0.5rem"}
               borderBottom={"2px solid #C1FD35"}
             >
               Pagamento de serviços
@@ -135,7 +135,8 @@ export default function Home() {
           position={"absolute"}
           zIndex={"-2"}
           width="100%"
-          height="764"
+          height="100%"
+          overflow={"hidden"}
           objectFit={"cover"}
           top={"-35px"}
         />

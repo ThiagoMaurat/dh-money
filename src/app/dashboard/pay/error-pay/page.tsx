@@ -48,7 +48,7 @@ export default function ErrorPay() {
                       color={"#FFFFFF"}
                       fontWeight="700"
                       fontSize={{ base: "20", sm: "36px" }}
-                      lineHeight="22px"
+                      lineHeight="32px"
                     >
                       Houve um problema com seu pagamento
                     </Text>
@@ -62,7 +62,7 @@ export default function ErrorPay() {
                     color={"#CECECE"}
                     fontWeight="400"
                     fontSize="20px"
-                    lineHeight="16px"
+                    lineHeight="20px"
                   >
                     Pode ser devido a saldo insuficiente. Entre em contato com a empresa administradora de seu cartão.
                   </Text>
