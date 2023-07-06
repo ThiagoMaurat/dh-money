@@ -5,15 +5,13 @@ import { RadioGroupController } from "@/components/RadioGroup/RadioGroupControll
 import { useStepPayService } from "@/contexts/step_pay_service";
 import { useGetAccount } from "@/query/use-get-account";
 import { useGetCards } from "@/query/use-get-cards";
-import {
-  ServiceDetail,
-  useGetServiceById,
-} from "@/query/use-get-service-by-id";
+import { ServiceDetail } from "@/query/use-get-service-by-id";
 import { Divider, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { useFormContext } from "react-hook-form";
+import { Link } from "@chakra-ui/next-js";
 
 interface Step2Props {
   data: ServiceDetail;
@@ -100,6 +98,18 @@ export default function Step2({ data }: Step2Props) {
             </RadioGroupController>
           );
         })}
+
+        {cards?.length === 0 && (
+          <Text>
+            Nenhum cartão cadastrado. Favor,{" "}
+            <Link
+              href={"dashboard/cards/create-card"}
+              textDecoration={"underline"}
+            >
+              clique aqui para criar um.
+            </Link>
+          </Text>
+        )}
       </VStack>
 
       {errors.card?.message && (

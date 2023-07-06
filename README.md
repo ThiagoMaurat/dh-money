@@ -19,107 +19,78 @@
   
   <h2 id="equipe" >Equipe</h2>
   
-  <h3>1. Ector</h3>
-  <p><strong>Biografia:</strong> Paulo é um desenvolvedor frontend com experiência em HTML, CSS e JavaScript. Ele possui habilidades em design de interface de usuário e está sempre atualizado com as últimas tendências e tecnologias do mercado.</p>
+  
+  <h3>1. Ector Vinicius Constantino Cunha</h3>
+  <p>Linkedin <a style="color: #000000;" class="fab fa-linkedin fa-lg" href="https://www.linkedin.com/in/ector-cunha/"></a></p>
+  
+  <p><strong>Biografia:</strong> Profissional da área de desenvolvimento web com experiência de mercado, incluindo SPA, e-commerce e outros. Sólidos conhecimentos no frontend usando ReactJs. Constante aprendiz, fascinado em contribuir para o desenvolvimento tecnológico ajudando pessoas, proporcionando melhorias de negócios, adquirindo e compartilhando conhecimento.</p>
   <p><strong>Papéis desempenhados e tarefas realizadas:</strong></p>
   <ul>
-    <li>Desenvolvimento da estrutura HTML e CSS do projeto.</li>
-    <li>Implementação de funcionalidades e interações usando JavaScript.</li>
-    <li>Integração com APIs e serviços externos.</li>
-  </ul>
-  <p><strong>Pontos fortes nas principais áreas de tecnologia da carreira:</strong></p>
-  <ul>
-    <li>Front-end: 🔵 🔵 ⚪</li>
-    <li>Back-end: 🔵 ⚪ ⚪</li>
-    <li>Infraestrutura: 🔵 ⚪ ⚪</li>
-    <li>Testes / QA: 🔵 🔵 ⚪</li>
-    <li>Bancos de Dados: 🔵 🔵 ⚪</li>
+    <li>Resolução de tarefas relacionadas a gestão de meios de pagamento, pagamento de serviços, testes de qualidade e testes de cibersegurança.</li>
   </ul>
 
-  <h3>2. Karina</h3>
-  <p><strong>Biografia:</strong> Paulo é um desenvolvedor frontend com experiência em HTML, CSS e JavaScript. Ele possui habilidades em design de interface de usuário e está sempre atualizado com as últimas tendências e tecnologias do mercado.</p>
+  <h3>2. Karina Osuka</h3>
+  <p>Linkedin <a style="color: #000000;" class="fab fa-linkedin fa-lg" href="https://www.linkedin.com/in/karinaosuka"></a></p>
+
+  <p><strong>Biografia:</strong> Karina é uma desenvolvedora front-end com conhecimento em JavaScript e React JS. Acredita que o universo do front-end vai além do código, envolve o design, experiência do usuário, testes, acessibilidade e sustentabilidade. Com isso em mente sempre busca se manter atualizado na área.</p>
   <p><strong>Papéis desempenhados e tarefas realizadas:</strong></p>
   <ul>
-    <li>Desenvolvimento da estrutura HTML e CSS do projeto.</li>
-    <li>Implementação de funcionalidades e interações usando JavaScript.</li>
-    <li>Integração com APIs e serviços externos.</li>
-  </ul>
-  <p><strong>Pontos fortes nas principais áreas de tecnologia da carreira:</strong></p>
-  <ul>
-    <li>Front-end: 🔵 🔵 ⚪</li>
-    <li>Back-end: 🔵 ⚪ ⚪</li>
-    <li>Infraestrutura: 🔵 ⚪ ⚪</li>
-    <li>Testes / QA: 🔵 🔵 ⚪</li>
-    <li>Bancos de Dados: 🔵 🔵 ⚪</li>
+    <li>Desenvolvimento do plano de teste.</li>
+    <li>Criação de testes automatizados com Selenium Chromedriver.</li>
+    <li>Teste de sustentabilidade.</li>
+    <li>Criação das apresentações.</li>
   </ul>
 
   <h3>3. Paulo Gustavo Rossi</h3>
+  <p>Linkedin <a style="color: #000000;" class="fab fa-linkedin fa-lg" href="https://www.linkedin.com/in/paulo-rossi-95296a4b/"></a></p>
+
   <p><strong>Biografia:</strong> Paulo é um desenvolvedor frontend com experiência em HTML, CSS e JavaScript. Ele possui habilidades em design de interface de usuário e está sempre atualizado com as últimas tendências e tecnologias do mercado.</p>
   <p><strong>Papéis desempenhados e tarefas realizadas:</strong></p>
   <ul>
     <li>Desenvolvimento da estrutura HTML e CSS do projeto.</li>
     <li>Implementação de funcionalidades e interações usando JavaScript.</li>
     <li>Integração com APIs e serviços externos.</li>
-  </ul>
-  <p><strong>Pontos fortes nas principais áreas de tecnologia da carreira:</strong></p>
-  <ul>
-    <li>Front-end: 🔵 🔵 ⚪</li>
-    <li>Back-end: 🔵 ⚪ ⚪</li>
-    <li>Infraestrutura: 🔵 ⚪ ⚪</li>
-    <li>Testes / QA: 🔵 🔵 ⚪</li>
-    <li>Bancos de Dados: 🔵 🔵 ⚪</li>
   </ul>
 
-  <h3>4. Pedro</h3>
-  <p><strong>Biografia:</strong> Paulo é um desenvolvedor frontend com experiência em HTML, CSS e JavaScript. Ele possui habilidades em design de interface de usuário e está sempre atualizado com as últimas tendências e tecnologias do mercado.</p>
+  <h3>4. Pedro Menezes</h3>
+  <p>Linkedin <a style="color: #000000;" class="fab fa-linkedin fa-lg" href="https://www.linkedin.com/in/pdrmenezes/"></a></p>
+
+  <p><strong>Biografia:</strong> Desenvolvedor Front-End com formação em Comunicação e experiência em Design. Atividades profissionais frequentemente voltadas para o terceiro setor e iniciativas de desenvolvimento social e responsabilidade ambiental.  Aficionado por entender como as coisas funcionam a fundo (e seus porquês) e apaixonado por resolver problemas.</p>
   <p><strong>Papéis desempenhados e tarefas realizadas:</strong></p>
   <ul>
-    <li>Desenvolvimento da estrutura HTML e CSS do projeto.</li>
-    <li>Implementação de funcionalidades e interações usando JavaScript.</li>
-    <li>Integração com APIs e serviços externos.</li>
-  </ul>
-  <p><strong>Pontos fortes nas principais áreas de tecnologia da carreira:</strong></p>
-  <ul>
-    <li>Front-end: 🔵 🔵 ⚪</li>
-    <li>Back-end: 🔵 ⚪ ⚪</li>
-    <li>Infraestrutura: 🔵 ⚪ ⚪</li>
-    <li>Testes / QA: 🔵 🔵 ⚪</li>
-    <li>Bancos de Dados: 🔵 🔵 ⚪</li>
+    <li>Co-liderança da equipe</li>
+    <li>Gerenciamento de tarefas</li>
+    <li>Desenvolvimento de páginas e componentes React</li>
+    <li>Implementação de Design System</li>
+    <li>Integração com API</li>
+    <li>Manutenção da base de código</li>
   </ul>
 
-  <h3>5. Thiago</h3>
-  <p><strong>Biografia:</strong> Paulo é um desenvolvedor frontend com experiência em HTML, CSS e JavaScript. Ele possui habilidades em design de interface de usuário e está sempre atualizado com as últimas tendências e tecnologias do mercado.</p>
+  <h3>5. Thiago Maurat Martins Dias</h3>
+  <p>Linkedin <a style="color: #000000;" class="fab fa-linkedin fa-lg" href="https://www.linkedin.com/in/thiago-maurat-477a041b9/"></a></p>
+
+  <p><strong>Biografia:</strong> Neste projeto, atuei com proficiência e zelo na implementação e desenvolvimento da camada front-end utilizando Next.js. Minhas principais responsabilidades foram:
+Realizei a configuração inicial do ambiente de de desenvolvimento. Pude contribuir significativamente no desenvolvimento de componentes React reutilizáveis e de alto desempenho. Utilizei as melhores práticas do React, como o uso de componentes funcionais e hooks, para criar interfaces responsivas e interativas.
+Utilizei o roteamento avançado oferecido pelo Next.js para criar uma navegação suave entre as diferentes páginas e fluxos de aplicativo. Isso inclui a configuração de rotas dinâmicas, tratamento de parâmetros de URL e definição de rotas personalizadas.
+Fui responsável por integrar o front-end desenvolvido com Next.js a APIs externas. Utilizei a funcionalidade de chamadas a API do Next.js para consumir dados e atualizar dinamicamente as páginas, bem como de forma estática.</p>
   <p><strong>Papéis desempenhados e tarefas realizadas:</strong></p>
   <ul>
-    <li>Desenvolvimento da estrutura HTML e CSS do projeto.</li>
-    <li>Implementação de funcionalidades e interações usando JavaScript.</li>
-    <li>Integração com APIs e serviços externos.</li>
-  </ul>
-  <p><strong>Pontos fortes nas principais áreas de tecnologia da carreira:</strong></p>
-  <ul>
-    <li>Front-end: 🔵 🔵 ⚪</li>
-    <li>Back-end: 🔵 ⚪ ⚪</li>
-    <li>Infraestrutura: 🔵 ⚪ ⚪</li>
-    <li>Testes / QA: 🔵 🔵 ⚪</li>
-    <li>Bancos de Dados: 🔵 🔵 ⚪</li>
+    <li>Configuração inicial do projeto</li>
+    <li>Desenvolvimento de componentes React</li>
+    <li>Implementação de roteamento avançado</li>
+    <li>Integração com APIs</li>
   </ul>
 
   <h3>6. Vinicius Mendes da Silva</h3>
+  <p>Linkedin <a style="color: #000000;" class="fab fa-linkedin fa-lg" href="https://www.linkedin.com/in/viniciusmendesdasilva/"></a></p>
+  
   <p><strong>Biografia:</strong> Vinicius achou na tecnologia uma oportunidade de trabalhar com aquilo que ama. Possui conhecimento de Frontend, Backend, Infra e Testing. Contudo agora seus esforços estão voltados à ciência de dados e machine learning.</p>
   <p><strong>Papéis desempenhados e tarefas realizadas:</strong></p>
   <ul>
-    <li>Desenvolvimento de páginas responsivas e principalmente responsável por criar, manter e reproduzir casos de teste.</li>
+    <li>Desenvolvimento de páginas responsivas.</li>
+    <li>responsável por criar, manter e reproduzir casos de teste.</li>
   </ul>
-  <p><strong>Pontos fortes nas principais áreas de tecnologia da carreira:</strong></p>
-  <ul>
-    <li>Front-end: 🔵 🔵 ⚪</li>
-    <li>Back-end: 🔵 ⚪ ⚪</li>
-    <li>Infraestrutura: 🔵 ⚪ ⚪</li>
-    <li>Testes / QA: 🔵 ⚪ ⚪</li>
-    <li>Bancos de Dados: 🔵 🔵 🔵</li>
-    <li>Data Science: 🔵 🔵 🔵</li>
-  </ul>
-  
+
   <h2 id="metodologia-de-trabalho" >Metodologia de trabalho</h2>
   
   <p>Nossa equipe adotou a metodologia Scrum para gerenciar o projeto. Essa abordagem ágil nos permitiu lidar com os desafios de forma iterativa e flexível, entregando valor de maneira incremental.</p>
@@ -154,75 +125,48 @@
   
   <h2 id="tecnologias-utilizadas" >Tecnologias Utilizadas</h2>
   <ul>
-    <li><i class="fab fa-git"></i> Git</li>
-    <li><i class="fab fa-postman"></i> Postman</li>
-    <li><i class="fab fa-node"></i> Node</li>
-    <li><i class="fas fa-code"></i> Visual Studio Code</li>
-    <li><i class="fab fa-react"></i> React</li>
-    <li><i class="fab fa-react"></i> React Router V6</li>
-    <li><i class="fas fa-database"></i> MongoDB</li>
-    <li><i class="fab fa-docker"></i> Docker</li>
-    <li><i class="fab fa-kubernetes"></i> Minikube</li>
-    <li><i class="fas fa-vial"></i> Testing Library</li>
+    <li>Git <i class="fab fa-git"></i></li>
+    <li>Postman <i class="fab fa-postman"></i> </li>
+    <li>Node <i class="fab fa-node"></i> </li>
+    <li>Visual Studio Code <i class="fas fa-code"></i> </li>
+    <li>React <i class="fab fa-react"></i> </li>
+    <li>React Router V6 <i class="fab fa-react"></i> </li>
+    <li>MongoDB <i class="fas fa-database"></i> </li>
+    <li>Docker <i class="fab fa-docker"></i> </li>
+    <li>Minikube</li>
+    <li>Testing Library <i class="fas fa-vial"></i> </li>
+    <li>next.js 13</li>
+    <li>next auth</li>
+    <li>typescript</li>
+    <li>react query</li>
+    <li>react hook form</li>
+    <li>chakra ui</li>
+    <li>axios</li>
+    <li>date-fns</li>
+    <li>lodash</li>
   </ul>
   
   <h2 id="documentacao-tecnica-do-projeto" >Documentação Técnica do Projeto</h2>
 
-  <p>A documentação técnica do projeto inclui informações sobre o ambiente de desenvolvimento, boas práticas, convenções e acordos, estrutura e diagramas do banco de dados, componentes e diagramas do aplicativo, APIs disponíveis e sua documentação, bem como detalhes sobre a infraestrutura e os testes realizados para garantir a qualidade do software produzido.</p>
-  
-  <h3>Ambiente de desenvolvimento</h3>
-  <p>Para configurar o ambiente de desenvolvimento, siga as instruções abaixo:</p>
-  <ol>
-    <li>Instale o Git, o Postman, o Node e um editor de código de sua preferência (como o Visual Studio Code).</li>
-    <li>Instale a última versão do Next.js escrita com Typescript, React, React Router V6, MongoDB e as bibliotecas de componentes necessárias.</li>
-    <li>Configure o Docker e o Minikube para implantação.</li>
-  </ol>
-  
-  <h3>Estrutura do Banco de Dados</h3>
-  <p>A estrutura do banco de dados consiste nas seguintes tabelas:</p>
-  <ul>
-    <li>Tabela 1: Nome da tabela 1</li>
-    <li>Tabela 2: Nome da tabela 2</li>
-    <li>Tabela 3: Nome da tabela 3</li>
-  </ul>
-  <p>Veja o diagrama abaixo para uma representação visual da estrutura do banco de dados:</p>
-  <img src="database-diagram.png" alt="Diagrama do Banco de Dados">
-  
-  <h3>Componentes do Aplicativo</h3>
-  <p>O aplicativo é composto pelos seguintes componentes principais:</p>
-  <ul>
-    <li>Componente 1: Nome do componente 1</li>
-    <li>Componente 2: Nome do componente 2</li>
-    <li>Componente 3: Nome do componente 3</li>
-  </ul>
-  <p>Veja o diagrama abaixo para uma representação visual da arquitetura do aplicativo:</p>
-  <img src="app-architecture-diagram.png" alt="Diagrama de Arquitetura do Aplicativo">
-  
-  <h3>APIs Disponíveis</h3>
-  <p>O projeto oferece as seguintes APIs:</p>
-  <ul>
-    <li>API 1: Nome da API 1</li>
-    <li>API 2: Nome da API 2</li>
-    <li>API 3: Nome da API 3</li>
-  </ul>
-  <p>Consulte a documentação fornecida para obter mais informações sobre cada API, incluindo os endpoints, parâmetros esperados, respostas retornadas e exemplos de uso.</p>
-  
-  <h3>Infraestrutura</h3>
-  <p>A infraestrutura do projeto é baseada nas seguintes tecnologias:</p>
-  <ul>
-    <li><i class="fab fa-docker"></i> Docker</li>
-    <li> Kubernetes</li>
-  </ul>
-  <p>As configurações específicas podem ser encontradas na documentação do projeto.</p>
+  <p>A documentação técnica do projeto fornece informações abrangentes sobre o sistema desenvolvido, suas funcionalidades, arquitetura, tecnologias utilizadas e procedimentos de implantação. Esta documentação destina-se a desenvolvedores, arquitetos de software, analistas de QA e outros membros da equipe envolvidos no desenvolvimento, manutenção e implantação do projeto.</p>
   
   <h3>Testes</h3>
   <p>Foram realizados os seguintes testes para garantir a qualidade do software:</p>
+  <p>Teste manual</p>
   <ul>
-    <li>Testes unitários</li>
-    <li>Testes de integração</li>
-    <li>Testes de aceitação</li>
+    <li>Suíte de testes Fumaça</li>
+    <li>Suíte de testes Regressão</li>
   </ul>
-  <p>As ferramentas utilizadas incluíram o Testing Library e outras ferramentas de teste relevantes.</p>
+  <p>Teste automatizado</p>
+  <ul>
+    <li>Selenium chromedriver</li>
+  </ul>
+  <p>Teste de pegada de carbono</p>
+  <p>Teste de segurança</p>
+  <p>Teste de desempenho</p>
+
+  <h3>API</h3>
+  <p>O sistema expõe uma API para permitir integrações com outros sistemas. A documentação da API está disponível em <a>https://digitalmoney.ctd.academy/swagger/index.html#/</a>, e fornece detalhes sobre os endpoints disponíveis, parâmetros aceitos, formatos de solicitação e resposta, bem como exemplos de uso.</p>
   
   <h2>Conclusão</h2>
   <p>O projeto de desenvolvimento do frontend para o banco Digital Money House foi uma experiência enriquecedora para a equipe. Conseguimos desenvolver uma interface intuitiva e responsiva, aplicando as melhores práticas de desenvolvimento frontend. Superamos desafios técnicos, aprendemos a trabalhar em equipe e aprimoramos nossas habilidades.</p>
